@@ -15,7 +15,6 @@ protocol DetailsViewModelProtocol: AnyObject {
     func viewDidLoad()
     func getRepoItem(row: Int) -> UserRepo
     var onDataSourceChanged: (() -> Void)? { get set }
-    var onDataSourceEmpty: (() -> Void)? { get set }
     var onDataSourceError: (() -> Void)? { get set }
     var onReposChanged: (() -> Void)? { get set }
 }

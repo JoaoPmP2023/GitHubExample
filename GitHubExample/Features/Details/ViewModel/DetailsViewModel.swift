@@ -17,8 +17,6 @@ class DetailsViewModel: DetailsViewModelProtocol {
     
     var onDataSourceChanged: (() -> Void)?
     
-    var onDataSourceEmpty: (() -> Void)?
-    
     var onDataSourceError: (() -> Void)?
     
     var onReposChanged: (() -> Void)?
