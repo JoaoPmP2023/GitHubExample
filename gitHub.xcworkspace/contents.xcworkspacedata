@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:UISDK"
+      name = "UISDK">
+      <Group
+         location = "group:UISDK"
+         name = "UISDK">
+         <FileRef
+            location = "group:UISDK.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Common"
+         name = "Common">
+         <Group
+            location = "group:Enums"
+            name = "Enums">
+            <FileRef
+               location = "group:ProblemEnum.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Extensions"
+            name = "Extensions">
+            <FileRef
+               location = "group:UIImageView+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UIViewController+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UITableViewCell+Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:UITextField+Extensions.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ViewCodable"
+            name = "ViewCodable">
+            <FileRef
+               location = "group:ViewCodable.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewCodableController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:ViewComponents"
+            name = "ViewComponents">
+            <FileRef
+               location = "group:ProblemViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:LoadingViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:DefaulTextField.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:UISDK.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:NetworkSDK"
+      name = "NetworkSDK">
+      <FileRef
+         location = "group:NetworkSDK.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:NetworkSDK"
+         name = "NetworkSDK">
+         <Group
+            location = "group:NetworkService"
+            name = "NetworkService">
+            <FileRef
+               location = "group:NetworkService.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkTaskManager.swift">
+            </FileRef>
+            <Group
+               location = "group:Protocols"
+               name = "Protocols">
+               <FileRef
+                  location = "group:NetworkTaskManagerProtocol.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:NetworkServiceProtocol.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Endpoint.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Common"
+            name = "Common">
+            <FileRef
+               location = "group:Result.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:NetworkSDKInstance.swift">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkSDKIntanceProtocol.swift">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkSDK.h">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
       location = "container:GitHubExample.xcodeproj">
    </FileRef>
