@@ -21,10 +21,6 @@ class DetailsViewModel: DetailsViewModelProtocol {
     
     var onDataSourceError: (() -> Void)?
     
-    var onInformationLoading: ((Bool) -> Void)?
-    
-    var onReposLoading: ((Bool) -> Void)?
-    
     var onReposChanged: (() -> Void)?
     
     
@@ -39,11 +35,13 @@ class DetailsViewModel: DetailsViewModelProtocol {
         getRepos()
     }
     
+    func getRepoItem(row: Int) -> UserRepo {
+        repos[row]
+    }
+    
     private func getUserDetails() {
         
-        onInformationLoading?(true)
         service.getUserDetails(userName: self.user.login) { [weak self] details, error in
-            self?.onInformationLoading?(false)
             
             guard let details = details, error == nil else {
                 self?.onDataSourceError?()
@@ -52,16 +50,12 @@ class DetailsViewModel: DetailsViewModelProtocol {
             
             self?.userDetails = details
             self?.onDataSourceChanged?()
-
         }
     }
     
     private func getRepos() {
         
-        onReposLoading?(true)
         service.getUserRepos(userName: self.user.login) { [weak self] repos, error in
-            self?.onReposLoading?(false)
-            
             guard let repos = repos, error == nil else {
                 self?.onDataSourceError?()
                 return
