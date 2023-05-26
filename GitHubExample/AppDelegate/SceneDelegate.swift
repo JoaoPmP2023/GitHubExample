@@ -17,10 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         /// 2. Create a new UIWindow using the windowScene constructor which takes in a window scene.
         let window = UIWindow(windowScene: windowScene)
-        
+        window.backgroundColor = .white
         /// 3. Create a view hierarchy programmatically
         let viewController = ViewController(viewModel: HomeViewModel())
         let navigation = UINavigationController(rootViewController: viewController)
+        navigation.navigationBar.isTranslucent = false
+        
         
         /// 4. Set the root view controller of the window with your view controller
         window.rootViewController = navigation
