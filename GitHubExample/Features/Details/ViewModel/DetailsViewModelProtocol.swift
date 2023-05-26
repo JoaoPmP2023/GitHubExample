@@ -9,12 +9,14 @@ import Foundation
 
 protocol DetailsViewModelProtocol: AnyObject {
     
-    var userDetails: UserDetails { get }
+    var userDetails: UserDetails? { get }
     var repos: [UserRepo] { get }
     func viewDidLoad()
     var onDataSourceChanged: (() -> Void)? { get set }
     var onDataSourceEmpty: (() -> Void)? { get set }
     var onDataSourceError: (() -> Void)? { get set }
     var onInformationLoading: ((Bool) -> Void)? { get set }
+    var onReposLoading: ((Bool) -> Void)? { get set }
+    var onReposChanged: (() -> Void)? { get set }
     
 }
