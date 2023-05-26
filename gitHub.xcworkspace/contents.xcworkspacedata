@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../SampleApp/NetworkSDK/NetworkSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../SampleApp/UISDK/UISDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:GitHubExample.xcodeproj">
+   </FileRef>
+</Workspace>
