@@ -22,6 +22,7 @@
 		C24E02B22A20E460000ACE0B /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E02B12A20E460000ACE0B /* HomeViewModelProtocol.swift */; };
 		C24E02B42A20E705000ACE0B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E02B32A20E705000ACE0B /* HomeViewModel.swift */; };
 		C24E02B62A20ED37000ACE0B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E02B52A20ED37000ACE0B /* UserTableViewCell.swift */; };
+		C24E02C42A20FCBD000ACE0B /* DetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E02C32A20FCBD000ACE0B /* DetailsViewModelProtocol.swift */; };
 		C2E6B1192A20D6B5000CFB73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6B1182A20D6B5000CFB73 /* AppDelegate.swift */; };
 		C2E6B11B2A20D6B5000CFB73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6B11A2A20D6B5000CFB73 /* SceneDelegate.swift */; };
 		C2E6B11D2A20D6B5000CFB73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E6B11C2A20D6B5000CFB73 /* ViewController.swift */; };
@@ -78,6 +79,7 @@
 		C24E02B12A20E460000ACE0B /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		C24E02B32A20E705000ACE0B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C24E02B52A20ED37000ACE0B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		C24E02C32A20FCBD000ACE0B /* DetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 		C2E6B1152A20D6B5000CFB73 /* GitHubExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E6B1182A20D6B5000CFB73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E6B11A2A20D6B5000CFB73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		C24E02C22A20FC6A000ACE0B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C24E02C32A20FCBD000ACE0B /* DetailsViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				C24E02B02A20E284000ACE0B /* UserService.swift in Sources */,
 				C24E02A02A20DD10000ACE0B /* UsersEndPoint.swift in Sources */,
 				C24E02B42A20E705000ACE0B /* HomeViewModel.swift in Sources */,
+				C24E02C42A20FCBD000ACE0B /* DetailsViewModelProtocol.swift in Sources */,
 				C2E6B1192A20D6B5000CFB73 /* AppDelegate.swift in Sources */,
 				C24E02B22A20E460000ACE0B /* HomeViewModelProtocol.swift in Sources */,
 				C24E02AE2A20E1C5000ACE0B /* UserRepo.swift in Sources */,
