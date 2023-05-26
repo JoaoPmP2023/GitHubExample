@@ -47,7 +47,8 @@ class ViewController: ViewCodableController {
         
         viewModel.onGoToDetails = { [weak self] user in
             
-            
+            let viewController = DetailsViewController(viewModel: DetailsViewModel(user: user))
+            self?.navigationController?.pushViewController(viewController, animated: true)
         }
         
         viewModel.onDataSourceError = { [weak self] in
